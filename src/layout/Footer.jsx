@@ -1,13 +1,13 @@
 import React from "react";
 import { Link, NavLink } from "react-router-dom";
-import logo from '../assets/logo.png'
+import logo_another from '../assets/logo_another.png'
 export const Footer = () => {
   return (
     <footer className=" bg-brand-cream/80 backdrop-blur-md w-full border-t border-brand-gold/15  py-12 px-12">
       <div className="flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="space-y-4 text-center md:text-left">
           <NavLink to="/" className="text-2xl font-serif font-bold tracking-tight">
-         <img src={logo} className="md:w-[9vw] w-[30vw]" alt="educivic_logo" />
+         <img src={logo_another} className="md:w-[8vw] w-[30vw]" alt="educivic_logo" />
           </NavLink>
           <p className="text-muted-text text-[10px] font-body uppercase  tracking-[0.2em] pl-2 max-w-xs">
             educivic by 3Fi Tech. Not a training institute.
