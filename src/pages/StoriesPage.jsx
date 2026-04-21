@@ -55,7 +55,7 @@ export function StoriesPage() {
               whileInView="show"
               viewport={{ once: true, margin: "-100px" }}
               variants={staggerContainer}
-              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12"
+              className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-20 md:gap-12"
             >
               {[
                 {
