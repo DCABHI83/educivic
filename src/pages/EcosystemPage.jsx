@@ -1,6 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
 import { PageTransition } from '../components/PageTransition';
+import { NavLink } from 'react-router-dom';
 
 const staggerContainer = {
   hidden: { opacity: 0 },
@@ -150,8 +151,8 @@ export function EcosystemPage() {
               <h2 className='text-[#C8942A] italic'>ecosystem.</h2>
             </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              <button className="w-full md:w-auto bg-[#0B1628] text-white p-4 rounded-xl font-medium text-lg hover:opacity-90 transition-all">Become a Partner</button>
-              <button className="w-full md:w-auto border border-[#C8942A]/30 text-[#C8942A] p-4 rounded-xl font-medium text-lg hover:bg-[#C8942A]/5 transition-all">Apply as Scholar</button>
+              <NavLink className="w-full md:w-auto bg-[#0B1628] text-white p-4 rounded-xl font-medium text-lg hover:opacity-90 transition-all">Become a Partner</NavLink>
+              <NavLink to={'/apply'} className="w-full md:w-auto border border-[#C8942A]/30 text-[#C8942A] p-4 rounded-xl font-medium text-lg hover:bg-[#C8942A]/5 transition-all">Apply as Scholar</NavLink>
             </div>
           </motion.div>
         </section>

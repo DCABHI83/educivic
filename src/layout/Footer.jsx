@@ -1,19 +1,19 @@
 import React from "react";
-import { Link } from "react-router-dom";
-
+import { Link, NavLink } from "react-router-dom";
+import logo from '../assets/logo.png'
 export const Footer = () => {
   return (
-    <footer className="bg-brand-navy w-full border-t border-brand-gold/15 py-12 px-12">
+    <footer className=" bg-brand-cream/80 backdrop-blur-md w-full border-t border-brand-gold/15  py-12 px-12">
       <div className="flex flex-col md:flex-row justify-between items-center gap-12">
         <div className="space-y-4 text-center md:text-left">
-          <Link to="/" className="text-2xl font-serif text-brand-cream font-bold tracking-tight">
-            educ<span className="italic-accent-gold">i</span>v<span className="italic-accent-gold">i</span>c
-          </Link>
-          <p className="text-muted-text text-[12px] font-body uppercase tracking-[0.2em] max-w-xs">
+          <NavLink to="/" className="text-2xl font-serif font-bold tracking-tight">
+         <img src={logo} className="md:w-[9vw] w-[30vw]" alt="educivic_logo" />
+          </NavLink>
+          <p className="text-muted-text text-[10px] font-body uppercase  tracking-[0.2em] pl-2 max-w-xs">
             educivic by 3Fi Tech. Not a training institute.
           </p>
         </div>
-        <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-[12px] font-body uppercase tracking-widest font-medium text-muted-text">
+        <div className="flex flex-wrap justify-center gap-8 md:gap-12 text-[12px] font-body uppercase text-black tracking-widest font-medium ">
           <Link to="/programmes" className="hover:text-brand-gold transition-colors">Programmes</Link>
           <Link to="/ecosystem" className="hover:text-brand-gold transition-colors">Ecosystem</Link>
           <Link to="/partners" className="hover:text-brand-gold transition-colors">Partners</Link>
@@ -25,7 +25,7 @@ export const Footer = () => {
           <Link to="/about" className="hover:text-brand-gold transition-colors">About</Link>
           <Link to="/contact" className="hover:text-brand-gold transition-colors">Contact</Link>
         </div>
-        <div className="text-muted-text text-[10px] italic">
+        <div className="text-muted-text text-[12px] italic">
           educivic. — Not education. <span className="text-brand-gold font-bold">Employment.</span>
         </div>
       </div>
