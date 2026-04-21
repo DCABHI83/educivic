@@ -2,11 +2,12 @@ import React from 'react';
 import { ProgrammesSection } from '../sections/ProgrammesSection';
 import { PageTransition } from '../components/PageTransition';
 
+
 export function ProgrammesPage() {
   return (
     <PageTransition>
       <div className="flex flex-col min-h-screen">
-        <header className="relative bg-[#0B1628] text-[#FAF7F2] py-32 md:py-48 overflow-hidden">
+        <header className="relative bg-[#0B1628] text-[#FAF7F2] py-32 md:py-48 overflow-hidden bg-[url(/assets/background.jpg)] ">
           <div className="absolute inset-0 opacity-20 pointer-events-none">
             <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[800px] h-[800px] bg-[#C8942A] rounded-full blur-[160px]"></div>
           </div>

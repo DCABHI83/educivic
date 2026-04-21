@@ -91,18 +91,18 @@ export function ApplicationFormPage() {
               </div>
 
               {/* Form Footer */}
-              <div className="pt-16 flex flex-col sm:flex-row items-center justify-between border-t border-[#C8942A]/10 gap-8">
+              <div className="pt-16 flex flex-col sm:flex-row items-center justify-between border-t border-[#C8942A]/10 gap-7">
                 <div className="text-center sm:text-left">
                   <p className="text-[10px] uppercase tracking-widest text-[#8A9AB5] font-bold">Quick Submission</p>
                   <p className="text-xs text-[#3D4F6B] mt-1">Average response time: 2-3 business days</p>
                 </div>
-                <div className="flex items-center space-x-10">
-                  <button className="text-sm font-medium text-[#0B1628] hover:text-[#C8942A] transition-colors" type="button">
+                <div className="flex items-center gap-10">
+                  <button className="text-md font-medium text-[#0B1628] hover:text-[#C8942A] transition-colors" type="button">
                     Save draft
                   </button>
-                  <button className="bg-[#0B1628] text-[#FAF7F2] px-12 py-4 rounded-full font-medium text-sm tracking-wide shadow-xl shadow-[#0B1628]/10 hover:shadow-[#0B1628]/20 hover:-translate-y-0.5 transition-all flex items-center group" type="submit">
+                  <button className="bg-[#0B1628] text-[#FAF7F2] p-3 rounded-xl font-medium text-sm tracking-wide shadow-xl shadow-[#0B1628]/10 hover:shadow-[#0B1628]/20 hover:-translate-y-0.5 transition-all flex items-center group" type="submit">
                     Submit Application
-                    <span className="material-symbols-outlined ml-3 text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
+                    <span className="material-symbols-outlined  text-sm group-hover:translate-x-1 transition-transform">arrow_forward</span>
                   </button>
                 </div>
               </div>

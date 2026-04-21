@@ -106,7 +106,7 @@ export function FAQSection() {
                 variants={staggerContainer}
                 className={`py-24 flex flex-col md:flex-row ${section.alignment === 'right' ? 'md:flex-row-reverse' : ''} gap-12 md:gap-24 items-start`}
               >
-                <div className={`md:w-1/3 sticky top-32 ${section.alignment === 'right' ? 'text-right' : ''}`}>
+                <div className={`md:w-1/3 md:sticky top-32 ${section.alignment === 'right' ? 'text-right' : ''}`}>
                   <motion.h3 variants={scrollVariant} className="text-4xl md:text-5xl text-[#0B1628] font-serif">
                     {section.category.split(' ')[0]} <span className="text-[#C8942A] italic">{section.category.split(' ')[1]}</span>
                   </motion.h3>

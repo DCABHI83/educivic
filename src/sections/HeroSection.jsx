@@ -31,27 +31,27 @@ export const HeroSection = () => {
   };
 
   return (
-    <section className="relative pt-32 pb-24 md:pt-48 md:pb-32 px-8 md:px-24 overflow-hidden bg-surface">
+    <section className="relative md:pt-[4rem] pb-24 pt-15 md:pb-3 px-8 md:px-24 overflow-hidden bg-surface">
       <div className="hero-glow absolute inset-0 z-0"></div>
-      <div className="relative z-10 grid md:grid-cols-[60%_40%] gap-12 items-center max-w-7xl mx-auto">
+      <div className="relative z-10 grid md:grid-cols-[60%_40%] items-center max-w-7xl mx-auto">
         <motion.div 
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.8, ease: "easeOut" }}
-          className="space-y-8"
+          className="space-y-7"
         >
           <div className="flex items-center gap-4">
             <div className="h-[1px] w-12 bg-brand-gold"></div>
             <span className="text-brand-gold font-body font-medium tracking-[0.2em] uppercase text-xs">A 3Fi Tech Initiative</span>
           </div>
-          <h1 className="text-6xl md:text-8xl text-brand-navy leading-[0.95] tracking-tight font-serif">
+          <h1 className="text-6xl md:text-7xl text-brand-navy leading-[0.95] tracking-tight font-serif">
             Not education. <br />
             <span className="italic-accent-gold">Employment.</span>
           </h1>
           <p className="text-xl md:text-2xl font-light text-body-text max-w-xl leading-relaxed">
             Bridging the gap with high-immersion industry sprints. Secure your future with an <strong>official work experience letter</strong> signed by our CEO.
           </p>
-          <div className="flex flex-col sm:flex-row gap-6 pt-4">
+          <div className="flex flex-col sm:flex-row gap-6">
             <Link to="/apply">
               <Button variant="primary" className="text-lg px-10 py-4 w-full sm:w-auto">
                 Join the Cohort
@@ -63,18 +63,18 @@ export const HeroSection = () => {
               </Button>
             </Link>
           </div>
-          <div className="grid grid-cols-3 gap-8 pt-12">
-            <div>
-              <div className="text-3xl font-serif text-brand-navy">12+</div>
-              <div className="text-sm font-body text-muted-text uppercase tracking-wider">Years Tech Heritage</div>
+          <div className=" flex gap-10 pt-12 md:pt-5">
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-serif text-brand-navy font-bold">12+</div>
+              <div className="text-[0.65rem] font-body text-muted-text  uppercase tracking-wider">Years Tech Heritage</div>
             </div>
-            <div>
-              <div className="text-3xl font-serif text-brand-navy">500+</div>
-              <div className="text-sm font-body text-muted-text uppercase tracking-wider">Hiring Partners</div>
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-serif text-brand-navy font-bold">500+</div>
+              <div className="text-[0.65rem] font-body text-muted-text uppercase tracking-wider">Hiring Partners</div>
             </div>
-            <div>
-              <div className="text-3xl font-serif text-brand-navy">100%</div>
-              <div className="text-sm font-body text-muted-text uppercase tracking-wider">Immersion Based</div>
+            <div className="flex flex-col items-center">
+              <div className="text-3xl font-serif text-brand-navy font-bold">100%</div>
+              <div className="text-[0.65rem] font-body text-muted-text uppercase tracking-wider">Immersion Based</div>
             </div>
           </div>
         </motion.div>
@@ -90,7 +90,7 @@ export const HeroSection = () => {
         >
           {/* Floating Elements Container with 3D Effect */}
           <motion.div 
-            className="w-full space-y-6"
+            className="w-full space-y-6 md:mb-[2rem] mt-10"
             style={{ 
               rotateX, 
               rotateY, 

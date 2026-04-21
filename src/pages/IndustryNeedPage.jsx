@@ -43,7 +43,7 @@ export function IndustryNeedPage() {
               transition={{ duration: 0.8, delay: 0.2 }}
               className="mt-16 relative z-10"
             >
-              <button className="bg-[#0B1628] text-white px-10 py-4 rounded-full font-medium hover:opacity-90 transition-all flex items-center gap-3 w-full md:w-auto justify-center">
+              <button className="bg-[#0B1628] text-white p-4 rounded-xl font-medium text-sm hover:opacity-90 transition-all flex items-center gap-3 w-full md:w-auto justify-center">
                 Continue Journey
                 <span className="material-symbols-outlined text-lg">arrow_forward</span>
               </button>

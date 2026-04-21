@@ -1,9 +1,12 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { motion } from 'framer-motion';
 import { PageTransition } from '../components/PageTransition';
 import { Link } from 'react-router-dom';
+import MobileView from '../components/MobileView';
 
 export function CompareProgrammesPage() {
+    const [isActive,setActive] = useState("fullstack")
+
   return (
     <PageTransition>
       <div className="flex flex-col min-h-screen bg-[#FAF7F2]">
@@ -47,7 +50,7 @@ export function CompareProgrammesPage() {
               <label key={`u${i}`} className="group relative cursor-pointer">
                 <input type="checkbox" className="peer sr-only" />
                 <div className="px-8 py-4 rounded-full border border-[#C8942A]/15 bg-white/50 flex items-center gap-3 transition-all duration-300 peer-checked:bg-[#132035] peer-checked:border-[#C8942A] group-hover:scale-105">
-                  <span className="material-symbols-outlined text-[#8A9AB5] peer-checked:text-[#FAF7F2]">add_circle</span>
+                  <span className="material-symbols-outlined text-[#C8942A]  peer-checked:text-[#C8942A]">add_circle</span>
                   <span className="text-sm font-medium tracking-wide text-[#8A9AB5] peer-checked:text-[#FAF7F2] uppercase">{track}</span>
                 </div>
               </label>
@@ -56,7 +59,7 @@ export function CompareProgrammesPage() {
         </section>
 
     
-        <section className="pb-32 px-12 max-w-screen-2xl mx-auto overflow-x-auto w-full">
+        <section className="pb-32 px-12 max-w-screen-2xl mx-auto overflow-x-auto w-full hidden md:block ">
           <motion.div 
             initial={{ opacity: 0, y: 40 }}
             whileInView={{ opacity: 1, y: 0 }}
@@ -180,6 +183,12 @@ export function CompareProgrammesPage() {
               <span className="material-symbols-outlined transition-transform group-hover:translate-x-1">arrow_forward</span>
             </Link>
           </motion.div>
+        </section>
+
+        <section className='tableMobile'>
+          <div>
+          <MobileView isActive={isActive} setActive={setActive}/>
+          </div> 
         </section>
 
         {/* Final Vision Section */}

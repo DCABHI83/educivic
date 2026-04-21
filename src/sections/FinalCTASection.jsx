@@ -22,9 +22,6 @@ export function FinalCTASection() {
           <Link to="/apply" className="bg-[#0B1628] text-white px-12 py-5 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg active:scale-95 duration-200">
             Contact Dean
           </Link>
-          <Link to="/apply" className="text-[#C8942A] font-medium border-b border-[#C8942A]/30 pb-1 hover:border-[#C8942A] transition-all cursor-pointer">
-            Schedule a Call
-          </Link>
         </div>
       </motion.div>
     </section>

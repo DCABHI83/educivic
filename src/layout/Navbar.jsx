@@ -1,7 +1,8 @@
 import React, { useState } from "react";
-import { Link, useLocation } from "react-router-dom";
+import { Link, NavLink, useLocation } from "react-router-dom";
 import { Button } from "../components/Button";
 import { motion, AnimatePresence } from "framer-motion";
+import logo from '../assets/logo.png'
 
 export const Navbar = () => {
   const location = useLocation();
@@ -31,9 +32,9 @@ export const Navbar = () => {
   return (
     <>
       <nav className="fixed top-0 w-full z-50 bg-brand-cream/80 backdrop-blur-md flex justify-between items-center px-6 md:px-8 py-4 max-w-full mx-auto">
-        <Link to="/" className="text-2xl font-serif text-brand-navy font-bold tracking-tight z-50">
-          educ<span className="italic-accent-gold">i</span>v<span className="italic-accent-gold">i</span>c
-        </Link>
+      <NavLink to={'/'}>
+<img src={logo} className="w-[9vw]" alt="" />
+      </NavLink>
         
         {/* Desktop Links */}
         <div className="hidden lg:flex items-center space-x-6 xl:space-x-8 flex-wrap justify-center">

@@ -143,12 +143,15 @@ export function EcosystemPage() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.8 }}
-            className="max-w-4xl mx-auto text-center border border-[#C8942A]/15 p-16 md:p-24 rounded-[32px] bg-white shadow-sm"
+            className="max-w-4xl mx-auto flex flex-col gap-6 justify-center items-center border border-[#C8942A]/15 p-16 md:p-24 rounded-[32px] bg-white shadow-sm"
           >
-            <h2 className="text-6xl font-serif text-[#0B1628] mb-12">Join the <span className="text-[#C8942A] italic">ecosystem.</span></h2>
+            <div className='font-serif text-6xl flex flex-col md:gap-4 md:flex-row items-center'>
+              <h1>Join the</h1>
+              <h2 className='text-[#C8942A] italic'>ecosystem.</h2>
+            </div>
             <div className="flex flex-col md:flex-row items-center justify-center gap-6">
-              <button className="w-full md:w-auto bg-[#0B1628] text-white px-12 py-5 rounded-full font-medium text-lg hover:opacity-90 transition-all">Become a Partner</button>
-              <button className="w-full md:w-auto border border-[#C8942A]/30 text-[#C8942A] px-12 py-5 rounded-full font-medium text-lg hover:bg-[#C8942A]/5 transition-all">Apply as Scholar</button>
+              <button className="w-full md:w-auto bg-[#0B1628] text-white p-4 rounded-xl font-medium text-lg hover:opacity-90 transition-all">Become a Partner</button>
+              <button className="w-full md:w-auto border border-[#C8942A]/30 text-[#C8942A] p-4 rounded-xl font-medium text-lg hover:bg-[#C8942A]/5 transition-all">Apply as Scholar</button>
             </div>
           </motion.div>
         </section>

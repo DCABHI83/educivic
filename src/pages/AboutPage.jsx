@@ -61,7 +61,7 @@ export function AboutPage() {
         {/* Section 3: Our Core Values */}
         <section className="bg-[#0B1628] py-32 md:py-48 px-8 text-white overflow-hidden">
           <div className="max-w-screen-2xl mx-auto">
-            <div className="flex flex-col md:flex-row justify-between items-end mb-24 gap-8">
+            <div className="flex flex-col md:flex-row justify-between items-center mb-24 gap-8">
               <div className="max-w-xl">
                 <span className="font-sans text-xs tracking-[0.3em] uppercase text-[#C8942A]/60 mb-4 block">Foundational Pillars</span>
                 <h2 className="text-4xl md:text-6xl font-serif leading-tight">

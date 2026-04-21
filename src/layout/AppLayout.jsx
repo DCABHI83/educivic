@@ -11,7 +11,7 @@ export const AppLayout = () => {
   return (
     <div className="flex flex-col min-h-screen">
       <Navbar />
-      <main className="flex-1 pt-20">
+      <main className="flex-1 md:pt-15">
         <AnimatePresence mode="wait" initial={false}>
           {element && React.cloneElement(element, { key: location.pathname })}
         </AnimatePresence>

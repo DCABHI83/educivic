@@ -182,7 +182,7 @@ export function PartnersPage() {
                   <label className="block text-[10px] uppercase tracking-widest text-[#8A9AB5] mb-2 font-medium">Brief Insight</label>
                   <textarea rows="3" className="w-full bg-transparent border-none focus:ring-0 p-0 text-lg font-sans text-[#0B1628] placeholder:text-[#8A9AB5]/50 resize-none outline-none" placeholder="How do you envision our technical synergy?"></textarea>
                 </div>
-                <button type="submit" className="w-full bg-[#0B1628] text-white py-5 rounded-full text-lg font-sans font-medium hover:opacity-90 transition-opacity">
+                <button type="submit" className="w-full bg-[#0B1628] text-white py-5 rounded-xl text-lg font-sans font-medium hover:opacity-90 transition-opacity">
                   Request Protocol
                 </button>
               </form>
