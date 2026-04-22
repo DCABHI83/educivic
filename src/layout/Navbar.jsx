@@ -34,7 +34,7 @@ export const Navbar = () => {
     <>
       <nav className="fixed top-0 w-full z-50 bg-brand-cream/80 backdrop-blur-md flex justify-between items-center px-6 md:px-8  max-w-full mx-auto">
       <NavLink to={'/'} className=''>
-<img src={logo} className="md:w-[10vw] w-[30vw] md:h-[9vh]" alt="educivic_logo" />
+<img src={logo} className="md:w-[10vw] w-[30vw] " alt="educivic_logo" />
       </NavLink>
         
         {/* Desktop Links */}
