@@ -63,16 +63,16 @@ export const HeroSection = () => {
               </Button>
             </Link>
           </div>
-          <div className=" flex gap-10 pt-12 md:pt-5">
-            <div className="flex flex-col items-center">
+          <div className=" flex gap-10 pt-12 md:pt-5 ">
+            <div className="flex flex-col items-center text-center">
               <div className="text-3xl font-serif text-brand-navy font-bold">12+</div>
               <div className="text-[0.65rem] font-body text-muted-text  uppercase tracking-wider">Years Tech Heritage</div>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center text-center">
               <div className="text-3xl font-serif text-brand-navy font-bold">500+</div>
               <div className="text-[0.65rem] font-body text-muted-text uppercase tracking-wider">Hiring Partners</div>
             </div>
-            <div className="flex flex-col items-center">
+            <div className="flex flex-col items-center text-center">
               <div className="text-3xl font-serif text-brand-navy font-bold">100%</div>
               <div className="text-[0.65rem] font-body text-muted-text uppercase tracking-wider">Immersion Based</div>
             </div>
