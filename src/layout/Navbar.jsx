@@ -3,7 +3,7 @@ import { Link, NavLink, useLocation } from "react-router-dom";
 import { Button } from "../components/Button";
 import { motion, AnimatePresence } from "framer-motion";
 import logo from '../assets/logo.png'
-import logo_another from '../assets/logo_another.png'
+
 
 export const Navbar = () => {
   const location = useLocation();
@@ -34,7 +34,7 @@ export const Navbar = () => {
     <>
       <nav className="fixed top-0 w-full z-50 bg-brand-cream/80 backdrop-blur-md flex justify-between items-center px-6 md:px-8  max-w-full mx-auto">
       <NavLink to={'/'} className=''>
-<img src={logo_another} className="md:w-[7vw] w-[22vw] md:h-[15vh] h-[12vh]" alt="educivic_logo" />
+<img src={logo} className="md:w-[10vw] w-[30vw] md:h-[9vh]" alt="educivic_logo" />
       </NavLink>
         
         {/* Desktop Links */}
